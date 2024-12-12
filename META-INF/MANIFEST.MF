@@ -3,9 +3,17 @@ Bundle-ManifestVersion: 2
 Bundle-Name: DynamicTrace
 Bundle-SymbolicName: DynamicTrace;singleton:=true
 Bundle-Version: 1.0.0.qualifier
+Import-Package: org.eclipse.jface.text
 Bundle-Activator: com.dynamictrace.Activator
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ org.eclipse.ui.console;bundle-version="3.11.400",
+ org.aspectj.runtime;bundle-version="1.7.3",
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.core.resources,
+ org.eclipse.jdt.core,
+ org.eclipse.equinox.registry
+Bundle-ClassPath: ., lib/aspectjrt-1.9.19.jar, lib/aspectjweaver-1.9.19.jar
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: DynamicTrace
 Bundle-ActivationPolicy: lazy

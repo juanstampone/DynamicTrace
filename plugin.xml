@@ -17,7 +17,7 @@
    <extension
          point="org.eclipse.ui.handlers">
       <handler
-            class="dynamictrace.handlers.SampleHandler"
+            class="com.dynamictrace.handlers.DynamicTraceHandler"
             commandId="DynamicTrace.commands.sampleCommand">
       </handler>
    </extension>
@@ -52,8 +52,8 @@
             <command
                   id="DynamicTrace.toolbars.sampleCommand"
                   commandId="DynamicTrace.commands.sampleCommand"
-                  icon="icons/sample.png"
-                  tooltip="Say hello world">
+                  icon="icons/analizar.png"
+                  tooltip="Dynamic Trace">
             </command>
          </toolbar>
       </menuContribution>

@@ -1,0 +1,10 @@
+<aspectj>
+
+    <aspects>
+        <aspect name="com.dynamictrace.handlers.TraceAspect" />
+    </aspects>
+        <weaver>
+        <!-- Aplica weaving solo a las clases dentro del paquete `your.package` -->
+        <include within="*"/>
+    </weaver>
+</aspectj>
